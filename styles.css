@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CZ:wght@100..400&display=swap');
 /* HEADER */
 .Top-hearder {
   position: fixed;
@@ -90,6 +91,7 @@
 }
 
 .cont-ini-texto {
+  font-family: "Playwrite CZ", cursive;
   flex: 1;
   order: 2; /* derecha */
 }
