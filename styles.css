@@ -190,3 +190,72 @@ button {
 button:hover {
   background-color: #2e7d32;
 }
+/* Ocultamos el checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Ícono hamburguesa */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  z-index: 2000;
+}
+
+/* ========================== */
+/*        RESPONSIVE          */
+/* ========================== */
+@media (max-width: 768px) {
+
+  /* Mostramos la hamburguesa */
+  .hamburger {
+    display: block;
+  }
+
+  /* Menú horizontal se esconde en móvil */
+  .Menu-horizontal {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    background-color: #4CAF50;  /* verde del header */
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 1500;
+  }
+
+  .Menu-horizontal li {
+    padding: 1rem 0;
+  }
+
+  .Menu-horizontal li a {
+    color: #fff;
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  /* Submenú vertical dentro del menú móvil */
+  .Menu-vertical {
+    position: static;
+    background-color: #66BB6A;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .Menu-horizontal li:hover .Menu-vertical {
+    display: block;
+  }
+
+  /* Mostrar el menú cuando el checkbox está activo */
+  .menu-toggle:checked ~ .Menu-horizontal {
+    display: flex;
+  }
+}
+
