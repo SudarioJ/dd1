@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css"/>
+  </head>
+  <body>
+  <!--encabezado de la web-->
+    <nav class="Top-hearder">
+      <a href="" class="logo">
+        <img height="75" width="75" src="Image/logo nuevo.png" alt="" />
+      </a>
+      <ul class="Menu-horizontal">
+        <li><a href="">Inicio</a></li>
+        <li>
+          <a href="">Panel de Control</a>
+          <ul class="Menu-vertical">
+            <li><a href="">Publicaciones</a></li>
+            <li><a href="">Estadisticas de reciclado</a></li>
+            <li><a href="">Mis materiales reciclados</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href=""> Mapas</a>
+          <ul class="Menu-vertical">
+            <li><a href="">Puntos de reciclaje</a></li>
+            <li><a href="">Zona con mas reciclaje</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href=""> Perfil</a>
+          <ul class="Menu-vertical">
+            <li><a href="">Informacion personal</a></li>
+            <li><a href="">Seguridad</a></li>
+            <li><a href="">Contactos</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!--primera seccion de la pagina-->
+    <section class="seccion-Inicio">
+      <div class="cont-gral-inicio">
+        <div class="cont-ini-texto">
+          <h1>Bienvenidos Usuario</h1>
+          <p>
+            Samiforce es una aplicación ecológica y colaborativa que conecta a
+            ciudadanos con recicladores verificados, facilitando la publicación,
+            ubicación y recolección de materiales reciclables. Su propósito es
+            fomentar una cultura de sostenibilidad mediante la tecnología,
+            promoviendo la responsabilidad ambiental y la participación
+            comunitaria. A través de una interfaz simple y visual, los usuarios
+            pueden registrar los materiales que desean reciclar, compartir su
+            ubicación y contribuir activamente al cuidado del planeta. Con
+            Samiforce, reciclar es más fácil, transparente y solidario.
+          </p>
+        </div>
+        <div class="cont-ini-imagen">
+          <img src="Image/1fpV.gif" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--video -->
+    <section class="seccion-panelcontro">
+      <div class="cont-gral-panelcontro">
+        <div class="cont-panelcontro-video">
+          <iframe src="https://www.youtube.com/embed/uaI3PLmAJyM"
+          title= "reciclaje"
+          allowfullscreen
+          loadding ="lazy">
+          </iframe>
+      </div>
+        <div class="cont-panelcontro-text">
+          <h1>¿Qué es el reciclaje?</h1>
+          <p>El reciclaje ayuda a cuidar el planeta y reducir la contaminación.</p>
+    </section>
+    <!--SECCION FORMULARIO CONTANCTOS-->
+    <section class="seccion-formulario">
+      <div class="div-cont-form">
+        <h2>Formulario de Registro</h2>
+        <p>Complete todos los campos</p>
+      <form class="formulario">
+          <div class="campo">
+            <label for="nombre">Nombre completos:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres">
+          </div>
+        <div class="campo">
+          <label for="nombre">Pais:</label>
+          <select id="pais" name="pais">
+          <option value="">Seleccione un pais</option>
+          <option value="Peru">Peru</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Ecuador">Ecuador</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Paraguay">Paraguay</option>
+          <option value="Uruguay">Uruguay</option>
+          </select>
+        </div>
+        <!--checkbox-->
+        <div class="campo">
+          <label>Intereses:</label>
+          <ul class="lista-checkbox">
+            <li><label><input type="checkbox" name="interes" value="reciclaje">Reciclaje</label></li>
+            <li><label><input type="checkbox" name="interes" value="medioambiente">Medio ambiente</label></li>
+            <li><label><input type="checkbox" name="interes" value="reutilizacion">Reutilización</label></li>
+            <li><label><input type="checkbox" name="interes" value="energias-renovables">Energías renovables</label></li>
+            <li><label><input type="checkbox" name="interes" value="comunidad">Trabajo comunitario</label></li>
+          </ul>
+        </div>
+          <!--Radio buttom-->
+          <div class="campo">
+            <label>Sexo:</label>    
+            <ul class="lista-radio">
+              <li><label><input type="radio" name="genero" value="masculino">Masculino</label></li>
+              <li><label><input type="radio" name="genero" value="femenino">Femenino</label></li>
+            </ul>
+          </div>
+        <button type="submit">Enviar</button>
+      </form>
+      </div>
+    </section>
+ <!-- Enlaces legales -->
+ <section class="seccion-pie">
+ <footer class="footer-container">
+  <a href="" class="logo">
+    <img height="120" width="120" src="Image/logo nuevo.png" alt="" />
+  </a>
+ <div class="footer-links">
+  <h4>Legal</h4>
+  <a href=""
+    >Política de Privacidad</a
+  >
+  <!-- Dentro de href llama a un documento pdf con la poltica-->
+  <a href="documentos/obtenerDocumento.pdf">Términos y Condiciones</a>
+  <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+  <a href="documentos/obtenerDocumento.pdf" target="_blank">Protección de Datos</a>
+</div>
+
+<!-- Redes sociales con íconos personalizados -->
+<div class="footer-social">
+  <h4>Síguenos</h4>
+  <a href="#"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+      alt="Facebook"
+      class="social-icon"
+  /></a>
+  <a href="#"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+      alt="Instagram"
+      class="social-icon"
+  /></a>
+  <a href="#"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+      alt="LinkedIn"
+      class="social-icon"
+  /></a>
+  <a href="#"
+    ><img
+      src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+      alt="Twitter"
+      class="social-icon"
+  /></a>
+</div>
+</div>
+</footer>
+</section>
+  </body>
+</html>
